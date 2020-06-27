@@ -1,0 +1,109 @@
+*
+	{
+		margin:0;
+		padding:0;
+		font-weight:900;
+	}
+
+	html
+	{
+		cursor: pointer;
+	}
+	.game
+	{
+		height:400px;
+		width:900px;
+		border-bottom:1px solid #777;
+		border-right:1px solid #777;
+
+		overflow:hidden;
+	}
+
+	#character
+	{
+		position: relative;
+		top:272px;
+		
+
+	}
+	.animate
+	{
+		animation: jump 1s;
+	}
+		
+		
+	
+
+	#hurdle
+	{
+		position: relative;
+		
+		top: 195px;
+    left: 800px;
+		
+		animation: run 2s infinite linear;
+		
+		
+	}
+
+	@keyframes run {
+   0%   {left: 800px;}
+
+   100%{left: -40px;}
+ 
+}
+
+@keyframes jump {
+   0%   {top: 272px;}
+   30%{top: 0px;}
+   70%{top: 0px;}
+   100%{top: 272px;}
+
+	}
+
+	.game_info
+	{
+		width:900px;
+		margin:10px;
+		text-align:center;
+		font-size:24px;
+	}
+
+	.lose_msg
+	{
+		font-size:25px;
+		color:red;
+		position:absolute;
+		top:60px;
+		left:60px;
+	}
+
+	.lose_info
+	{
+		float:right;
+		margin-right:40px;
+	}
+
+	.retry_btn_wrapper
+	{
+		margin-top:25px;
+	}
+
+	#retry_btn
+	{
+		float: right;
+margin-right: 40px;
+	}
+
+	.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
